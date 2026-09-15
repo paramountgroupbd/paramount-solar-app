@@ -41,7 +41,7 @@ const Footer = () => {
   ]
 
   const socialLinks = [
-    { icon: FacebookIcon, href: '#', label: 'Facebook', color: 'hover:bg-blue-600' },
+    { icon: FacebookIcon, href: 'https://www.facebook.com/paramountsolarlimited/', label: 'Facebook', color: 'hover:bg-blue-600' },
     { icon: TwitterIcon, href: '#', label: 'Twitter', color: 'hover:bg-sky-500' },
     { icon: LinkedinIcon, href: '#', label: 'LinkedIn', color: 'hover:bg-blue-700' },
     { icon: InstagramIcon, href: '#', label: 'Instagram', color: 'hover:bg-pink-600' }
@@ -129,6 +129,8 @@ const Footer = () => {
                 <motion.a
                   key={social.label}
                   href={social.href}
+                  target={social.href !== '#' ? '_blank' : undefined}
+                  rel={social.href !== '#' ? 'noopener noreferrer' : undefined}
                   whileHover={{ scale: 1.1 }}
                   whileTap={{ scale: 0.95 }}
                   className={`bg-[var(--bg-tertiary)] ${social.color} p-3 rounded-lg transition-all duration-300 border border-[var(--border-primary)]`}
@@ -218,16 +220,29 @@ const Footer = () => {
                 Pioneering renewable energy solutions for a sustainable Bangladesh
               </p>
             </div>
-            <div className="flex space-x-6 mt-4 md:mt-0">
-              {legalLinks.map((item) => (
-                <Link
-                  key={item.name}
-                  href={item.href}
-                  className="text-[var(--text-secondary)] font-semibold hover:text-[var(--solar-accent)] text-sm transition-colors"
+            <div className="flex flex-col items-center md:items-end gap-2 mt-4 md:mt-0">
+              <div className="flex space-x-6">
+                {legalLinks.map((item) => (
+                  <Link
+                    key={item.name}
+                    href={item.href}
+                    className="text-[var(--text-secondary)] font-semibold hover:text-[var(--solar-accent)] text-sm transition-colors"
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+              </div>
+              <p className="text-[var(--text-secondary)] text-xs">
+                Developed by{' '}
+                <a
+                  href="https://www.devnurul.com/"
+                  target="_blank"
+                  rel="noopener"
+                  className="font-semibold hover:text-[var(--solar-accent)] transition-colors"
                 >
-                  {item.name}
-                </Link>
-              ))}
+                  Nurul
+                </a>
+              </p>
             </div>
           </div>
         </div>
