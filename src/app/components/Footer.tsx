@@ -232,7 +232,7 @@ const Footer = () => {
                   </Link>
                 ))}
               </div>
-              <p className="text-[var(--text-secondary)] text-xs">
+              <p className="text-[var(--solar-warning)] italic text-xs">
                 Developed by{' '}
                 <a
                   href="https://www.devnurul.com/"
