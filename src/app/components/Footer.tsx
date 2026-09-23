@@ -232,17 +232,6 @@ const Footer = () => {
                   </Link>
                 ))}
               </div>
-              {/* <p className="text-[var(--solar-warning)] italic text-xs">
-                Developed by{' '}
-                <a
-                  href="https://www.devnurul.com/"
-                  target="_blank"
-                  rel="noopener"
-                  className="font-semibold hover:text-[var(--solar-accent)] transition-colors"
-                >
-                  Nurul
-                </a>
-              </p> */}
             </div>
           </div>
         </div>
