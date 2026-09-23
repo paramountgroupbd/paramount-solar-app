@@ -232,6 +232,17 @@ const Footer = () => {
                   </Link>
                 ))}
               </div>
+              <p className="text-[var(--text-secondary)] text-xs opacity-30">
+                Developed by{' '}
+                <a
+                  href="https://www.devnurul.com/"
+                  target="_blank"
+                  rel="noopener"
+                  className="font-semibold hover:text-[var(--solar-accent)] transition-colors"
+                >
+                  Nurul
+                </a>
+              </p>
             </div>
           </div>
         </div>
