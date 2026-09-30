@@ -93,7 +93,7 @@ export const projects: { [key: string]: ProjectData } = {
     ]
   },
   'bibiana-project': {
-    name: "MOULVIBAZAR SOLAR POWER LTD",
+    name: "BIBIYANA SOLAR POWER LTD",
     type: "50MW Power Plant",
     status: "Pipeline",
     capacity: "50MW",
@@ -165,7 +165,7 @@ export const projects: { [key: string]: ProjectData } = {
     ]
   },
   'moulvibazar-project2': {
-    name: "PARAMOUNT SOLAR - 25MW IPP",
+    name: "SURMA SOLAR POWER LTD",
     type: "25MW Grid-Tied Solar Photovoltaic",
     status: "Planning",
     capacity: "25MW",
@@ -212,7 +212,7 @@ export const projects: { [key: string]: ProjectData } = {
     ]
   },
   'pabna-project2': {
-    name: "PARAMOUNT SOLAR - 70MW IPP",
+    name: "PABNA GREEN POWER LTD",
     type: "70MW Grid-Tied Solar Photovoltaic",
     status: "Planning",
     capacity: "70MW",
@@ -257,7 +257,7 @@ export const projects: { [key: string]: ProjectData } = {
     ]
   },
   'pabna-project3': {
-    name: "PARAMOUNT SOLAR - 150MW IPP",
+    name: "PADMA SOLAR POWER LTD",
     type: "150MW Grid-Tied Solar Photovoltaic",
     status: "Planning",
     capacity: "150MW",
