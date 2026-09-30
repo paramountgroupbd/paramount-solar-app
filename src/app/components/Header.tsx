@@ -245,32 +245,32 @@ export default function Header() {
       <div className="container-responsive">
         <div className="flex-between">
           {/* Logo */}
-          <Link href="/" className="flex-center hover-lift">
+          <Link href="/" className="flex-center hover-lift" aria-label="Paramount Solar Ltd - Home">
             <div className="flex flex-row m-2">
               <Image
                 src="/p1.png"
-                alt="logo"
+                alt=""
                 width={windowWidth < 768 ? 4 : 6}
                 height={0}
                 className="object-contain"
               />
               <Image
                 src="/p2.png"
-                alt="logo"
+                alt=""
                 width={windowWidth < 768 ? 4 : 6}
                 height={0}
                 className="object-contain"
               />
               <Image
                 src="/p3.png"
-                alt="logo"
+                alt=""
                 width={windowWidth < 768 ? 4 : 6}
                 height={0}
                 className="object-contain"
               />
               <Image
                 src="/p4.png"
-                alt="logo"
+                alt=""
                 width={windowWidth < 768 ? 4 : 6}
                 height={0}
                 className="object-contain"

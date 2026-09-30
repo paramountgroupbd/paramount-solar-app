@@ -12,7 +12,7 @@ const inter = Inter({
 const companyInfo = {
   name: 'Paramount Solar Ltd',
   description: 'Leading renewable energy company dedicated to harnessing solar power for a sustainable, carbon-neutral future in Bangladesh',
-  url: 'https://paramount-solar-app.vercel.app',
+  url: 'https://www.paramountsolar.net',
   logo: '/images/logo.png',
   phone: '+880 1799 989544',
   email: 'info@paramountsolar.net',
@@ -67,10 +67,10 @@ export const metadata: Metadata = {
     description: companyInfo.description,
     images: [
       {
-        url: '/og-image.jpg',
-        width: 1200,
-        height: 630,
-        alt: 'Paramount Solar Ltd - Leading Solar Energy Solutions',
+        url: '/images/pabna.png',
+        width: 1064,
+        height: 600,
+        alt: 'Paramount Solar - 100MW Dynamic Sun Energy solar park, Pabna',
       },
     ],
   },
@@ -80,8 +80,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: `${companyInfo.name} - Carbon Neutral Future`,
     description: companyInfo.description,
-    creator: '@paramountsolar',
-    images: ['/og-image.jpg'],
+    images: ['/images/pabna.png'],
   },
 
   // Robots Instructions
@@ -98,14 +97,7 @@ export const metadata: Metadata = {
   },
 
   // Additional Important Metadata
-  manifest: '/manifest.json',
-  
-  // Verification (Add your actual verification codes)
-  verification: {
-    google: 'your-google-verification-code',
-    yandex: 'your-yandex-verification-code',
-    yahoo: 'your-yahoo-verification-code',
-  },
+  manifest: '/manifest.webmanifest',
 
   // Alternates and Languages
   alternates: {
@@ -161,10 +153,7 @@ const jsonLd = {
     addressCountry: companyInfo.address.country,
   },
   sameAs: [
-    'https://www.facebook.com/paramountsolar',
-    'https://www.linkedin.com/company/paramountsolar',
-    'https://twitter.com/paramountsolar',
-    'https://www.instagram.com/paramountsolar',
+    'https://www.facebook.com/paramountsolarlimited/',
   ],
   areaServed: 'Bangladesh',
   knowsAbout: [
@@ -195,8 +184,7 @@ export default function RootLayout({
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="" />
         
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
-        <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+        <link rel="apple-touch-icon" href="/images/logo.png" />
         
         <link rel="dns-prefetch" href="//fonts.googleapis.com" />
         <link rel="dns-prefetch" href="//fonts.gstatic.com" />

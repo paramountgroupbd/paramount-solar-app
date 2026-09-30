@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Mail, Phone, MapPin, ArrowUp, Zap, Leaf, Users, Building2, FacebookIcon, TwitterIcon, LinkedinIcon, InstagramIcon } from 'lucide-react'
+import { Mail, Phone, MapPin, ArrowUp, Zap, Leaf, Users, Building2, FacebookIcon, XIcon, LinkedinIcon } from 'lucide-react'
 import { useCallback } from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
@@ -42,9 +42,8 @@ const Footer = () => {
 
   const socialLinks = [
     { icon: FacebookIcon, href: 'https://www.facebook.com/paramountsolarlimited/', label: 'Facebook', color: 'hover:bg-blue-600' },
-    { icon: TwitterIcon, href: '#', label: 'Twitter', color: 'hover:bg-sky-500' },
-    { icon: LinkedinIcon, href: '#', label: 'LinkedIn', color: 'hover:bg-blue-700' },
-    { icon: InstagramIcon, href: '#', label: 'Instagram', color: 'hover:bg-pink-600' }
+    { icon: XIcon, href: '#', label: 'X', color: 'hover:bg-black' },
+    { icon: LinkedinIcon, href: '#', label: 'LinkedIn', color: 'hover:bg-blue-700' }
   ]
 
   return (
@@ -86,10 +85,10 @@ const Footer = () => {
           >
             <div className="flex items-center mb-6">
               <div className="flex flex-row p-3 rounded-xl mr-4">
-                <Image src="/p1.png" alt="logo" width={8} height={32}/>
-                <Image src="/p2.png" alt="logo" width={8} height={32}/>
-                <Image src="/p3.png" alt="logo" width={8} height={32}/>
-                <Image src="/p4.png" alt="logo" width={8} height={32}/>
+                <Image src="/p1.png" alt="" width={8} height={32}/>
+                <Image src="/p2.png" alt="" width={8} height={32}/>
+                <Image src="/p3.png" alt="" width={8} height={32}/>
+                <Image src="/p4.png" alt="" width={8} height={32}/>
               </div>
               <div>
                 <h3 className="text-2xl font-bold text-[var(--text-primary)]">PARAMOUNT SOLAR LTD.</h3>

@@ -134,8 +134,8 @@ const Contact = () => {
         description: 'For general inquiries, project proposals, and partnership opportunities.',
         additionalInfo: [
           'Response time: Within 24 hours',
-          'Project inquiries: projects@paramountsolar.com',
-          'Career opportunities: careers@paramountsolar.com'
+          'Project inquiries: projects@paramountsolar.net',
+          'Career opportunities: careers@paramountsolar.net'
         ],
         email: 'info@paramountsolar.net'
       }
