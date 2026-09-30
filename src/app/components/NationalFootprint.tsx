@@ -35,7 +35,7 @@ const NationalFootprint = () => {
 
   const locations: Location[] = [
     {
-      name: "LALMONIRHAT",
+      name: "ISPL",
       type: "30MW Solar Power Plant",
       status: "Operational",
       coordinates: { lat: 25.9974, lng: 89.1524 },
@@ -44,7 +44,7 @@ const NationalFootprint = () => {
       position: { top: isTouchDevice ? "20%" : "10%", left: "24%" }
     },
     {
-      name: "PABNA 1",
+      name: "DSEPL",
       type: "100MW Solar Park",
       status: "Operational",
       coordinates: { lat: 23.9637, lng: 89.1584 },
@@ -53,7 +53,7 @@ const NationalFootprint = () => {
       position: { top: "45%", left: "33%" }
     },
     {
-      name: "BIBIANA",
+      name: "BSP",
       type: "50MW Power Plant",
       status: "Pipeline",
       coordinates: { lat: 24.5045, lng: 91.6334 },
@@ -62,7 +62,7 @@ const NationalFootprint = () => {
       position: { top: "37%", left: "80%" }
     },
     {
-      name: "MOULVIBAZAR 2",
+      name: "SSP",
       type: "25MW Power Plant",
       status: "Pipeline",
       coordinates: { lat: 24.5005, lng: 91.6322 },
@@ -71,7 +71,7 @@ const NationalFootprint = () => {
       position: { top: "39%", left: "79%" }
     },
     {
-      name: "MOULVIBAZAR 1",
+      name: "MSPL",
       type: "10MW Solar Power Plant",
       status: "Operational",
       coordinates: { lat: 24.4937, lng: 91.6333 },
@@ -80,7 +80,7 @@ const NationalFootprint = () => {
       position: { top: "39%", left: "77%" }
     },
     {
-      name: "PABNA 2",
+      name: "PGP",
       type: "70MW Power Plant",
       status: "Pipeline",
       coordinates: { lat: 23.9602, lng: 89.1696 },
@@ -89,7 +89,7 @@ const NationalFootprint = () => {
       position: { top: "47%", left: "35%" }
     },
     {
-      name: "PABNA 3",
+      name: "PSP",
       type: "150MW Power Plant",
       status: "Pipeline",
       coordinates: { lat: 23.958, lng: 89.165 },
