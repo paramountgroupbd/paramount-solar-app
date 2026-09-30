@@ -18,7 +18,6 @@ export interface ProjectData {
   coordinates: { lat: number; lng: number }
   slug: string
   commissioningDate?: string
-  investment?: string
   developer?: string
   annualGeneration?: string
   co2Reduction?: string
@@ -711,12 +710,6 @@ const ProjectVisualization = ({ projectData }: ProjectVisualizationProps) => {
                     <div className="flex justify-between items-center border-b border-primary/20">
                       <span className="font-medium text-primary text-sm sm:text-base">Commissioned</span>
                       <span className="text-tertiary text-sm sm:text-base">{projectData.commissioningDate}</span>
-                    </div>
-                  )}
-                  {projectData.investment && (
-                    <div className="flex justify-between items-center border-b border-primary/20">
-                      <span className="font-medium text-primary text-sm sm:text-base">Investment</span>
-                      <span className="text-tertiary text-sm sm:text-base">{projectData.investment}</span>
                     </div>
                   )}
                   {projectData.landArea && (
