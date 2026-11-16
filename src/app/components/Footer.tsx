@@ -34,10 +34,10 @@ const Footer = () => {
   ]
 
   const stats = [
-    { value: '140MW+', label: 'Solar Capacity' },
+    { value: '435MW+', label: 'Solar Capacity' },
     { value: '7+', label: 'Years Experience' },
     { value: '145K+', label: 'Tons CO₂ Reduced' },
-    { value: '3+', label: 'Major Projects' }
+    { value: '7+', label: 'Major Projects' }
   ]
 
   const socialLinks = [

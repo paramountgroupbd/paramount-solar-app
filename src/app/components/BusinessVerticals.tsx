@@ -50,7 +50,11 @@ const BusinessVerticals: React.FC = () => {
         "200MW HSD Power Plant, Baghabari, Sirajganj",
         "30MW Solar Power Plant, Votmari, Kaliganj, Lalmonirhat",
         "100MW Solar Park, Hemayetpur, Pabna",
-        "10MW Solar Power Plant at Moulvibazar"
+        "10MW Solar Power Plant at Moulvibazar",
+        "25MW Solar Power Plant, Athangiri, Kagabala, Moulvibazar (Under Construction)",
+        "50MW Solar Power Plant, Nobiganj, Hobiganj (Under Construction)",
+        "70MW Solar Power Plant, Bhabanipur, Hemayetpur, Pabna (Under Construction)",
+        "150MW Solar Power Plant, Ratanpur, Hemayetpur, Pabna (Under Construction)"
       ],
       methods: [
         "IPP Project Development through MPPP",
@@ -58,8 +62,8 @@ const BusinessVerticals: React.FC = () => {
         "IPP Project Development through Open Tender Method"
       ],
       stats: [
-        { value: "140MW", label: "Total Capacity" },
-        { value: "3", label: "Major Projects" },
+        { value: "435MW", label: "Total Capacity" },
+        { value: "7", label: "Major Projects" },
         { value: "20+ Years", label: "PPA Duration" }
       ],
       images: [
@@ -339,7 +343,7 @@ const BusinessVerticals: React.FC = () => {
                         <div>
                           <h4 className="text-sm sm:text-base font-semibold text-primary mb-3 flex items-center gap-2">
                             <Target className="h-4 w-4 text-solar-accent flex-shrink-0" />
-                            Commissioned Projects
+                            Our Solar IPP Projects
                           </h4>
                           <div className="space-y-2">
                             {vertical.projects.map((project, idx) => (
