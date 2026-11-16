@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from 'framer-motion'
-import { Calendar, Zap, TrendingUp, Sun, Battery } from 'lucide-react'
+import { Zap, TrendingUp, Sun, Battery } from 'lucide-react'
 import SolarBanner from './SolarBanner'
 import Link from 'next/link'
 
@@ -48,28 +48,28 @@ const History = () => {
       link: "pabna-project"
     },
     {
-      year: "2025",
-      title: "10MW Plant Completion",
-      description: "10MW solar plant in Moulvibazar become operational",
+      year: "2026",
+      title: "10MW Solar Power Plant Operational",
+      description: "10MW solar plant in Moulvibazar became operational",
       icon: Sun,
-      status: "current" as const,
-      link: "bibiana-project"
+      status: "completed" as const,
+      link: "moulvibazar-project"
     },
     {
       year: "2026",
-      title: "Proposed 25MW and 50MW Project",
-      description: "25MW solar plant in Moulvibazar and 50MW solar project at Bibiana is proposed",
-      icon: Calendar,
-      status: "planned" as const,
-      link: ""
+      title: "25MW and 50MW Projects Under Construction",
+      description: "25MW solar plant in Moulovibazar and 50MW solar project in Bibiyana are under construction",
+      icon: TrendingUp,
+      status: "current" as const,
+      link: "moulvibazar-project2"
     },
     {
       year: "2027",
-      title: "Proposed 70MW and 150MW Project",
-      description: "70MW and 150MW solar project in Pabna is proposed",
-      icon: Calendar,
-      status: "planned" as const,
-      link: ""
+      title: "70MW and 150MW Projects Under Construction",
+      description: "70MW and 150MW solar projects in Pabna are under construction",
+      icon: TrendingUp,
+      status: "current" as const,
+      link: "pabna-project2"
     }
   ]
 
@@ -85,7 +85,7 @@ const History = () => {
   const getStatusText = (status: string) => {
     switch (status) {
       case "completed": return "Completed"
-      case "current": return "In Progress"
+      case "current": return "Under Construction"
       case "planned": return "Planned"
       default: return "Upcoming"
     }
@@ -137,7 +137,7 @@ const History = () => {
                 const IconComponent = milestone.icon
                 return (
                   <motion.div
-                    key={milestone.year}
+                    key={milestone.title}
                     initial={{ opacity: 0, x: -20 }}
                     whileInView={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -222,7 +222,7 @@ const History = () => {
               const IconComponent = milestone.icon
               return (
                 <motion.div
-                  key={milestone.year}
+                  key={milestone.title}
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}
                   transition={{ duration: 0.5, delay: index * 0.1 }}
@@ -320,11 +320,7 @@ const History = () => {
           </div>
           <div className="flex items-center gap-2">
             <div className="w-3 h-3 bg-solar-accent rounded-full" />
-            <span className="text-xs text-tertiary">In Progress</span>
-          </div>
-          <div className="flex items-center gap-2">
-            <div className="w-3 h-3 bg-solar-warning rounded-full" />
-            <span className="text-xs text-tertiary">Planned</span>
+            <span className="text-xs text-tertiary">Under Construction</span>
           </div>
         </motion.div>
 
