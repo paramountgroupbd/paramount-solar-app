@@ -421,16 +421,16 @@ const ProjectsPortfolio = () => {
               <div className="flex justify-center mb-2">
                 <Construction className="h-5 w-5 text-solar-warning" />
               </div>
-              <p className="text-xl font-bold text-solar-warning mb-1">10MW</p>
-              <p className="text-solar-warning/80 text-xs">Operational</p>
+              <p className="text-xl font-bold text-solar-warning mb-1">295MW</p>
+              <p className="text-solar-warning/80 text-xs">Under Construction</p>
             </div>
 
             <div className="bg-solar-accent/10 rounded-lg p-4 text-center border border-solar-accent/20">
               <div className="flex justify-center mb-2">
                 <TrendingUp className="h-5 w-5 text-solar-accent" />
               </div>
-              <p className="text-xl font-bold text-solar-accent mb-1">295MW</p>
-              <p className="text-solar-accent/80 text-xs">Under Construction</p>
+              <p className="text-xl font-bold text-solar-accent mb-1">435MW</p>
+              <p className="text-solar-accent/80 text-xs">Total Portfolio</p>
             </div>
           </div>
 
