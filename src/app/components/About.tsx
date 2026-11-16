@@ -93,7 +93,7 @@ const About = () => {
         type: "stats",
         data: [
           { label: "Founded", value: "2017", icon: History },
-          { label: "Projects", value: "7+", icon: Zap },
+          { label: "Projects", value: "7", icon: Zap },
           { label: "Capacity", value: "435MW", icon: TrendingUp }
         ]
       },
