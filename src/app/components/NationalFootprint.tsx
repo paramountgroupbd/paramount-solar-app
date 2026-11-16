@@ -1,7 +1,7 @@
 'use client'
 
 import { motion, Variants } from 'framer-motion'
-import { MapPin, Navigation, ZoomIn, ZoomOut, Compass, Search, Info, Target, Zap, Building2 } from 'lucide-react'
+import { MapPin, Navigation, ZoomIn, ZoomOut, Compass, Search, Info, Zap, Building2 } from 'lucide-react'
 import { useRouter } from 'next/navigation'
 import { useState, useRef, useCallback, useEffect } from 'react'
 import SolarBanner from './SolarBanner'
@@ -55,7 +55,7 @@ const NationalFootprint = () => {
     {
       name: "BSP",
       type: "50MW Power Plant",
-      status: "Pipeline",
+      status: "Under Construction",
       coordinates: { lat: 24.5045, lng: 91.6334 },
       capacity: "50MW",
       slug: "bibiana-project",
@@ -64,7 +64,7 @@ const NationalFootprint = () => {
     {
       name: "SSP",
       type: "25MW Power Plant",
-      status: "Pipeline",
+      status: "Under Construction",
       coordinates: { lat: 24.5005, lng: 91.6322 },
       capacity: "25MW",
       slug: "moulvibazar-project2",
@@ -82,7 +82,7 @@ const NationalFootprint = () => {
     {
       name: "PGP",
       type: "70MW Power Plant",
-      status: "Pipeline",
+      status: "Under Construction",
       coordinates: { lat: 23.9602, lng: 89.1696 },
       capacity: "70MW",
       slug: "pabna-project2",
@@ -91,7 +91,7 @@ const NationalFootprint = () => {
     {
       name: "PSP",
       type: "150MW Power Plant",
-      status: "Pipeline",
+      status: "Under Construction",
       coordinates: { lat: 23.958, lng: 89.165 },
       capacity: "150MW",
       slug: "pabna-project3",
@@ -281,11 +281,7 @@ const NationalFootprint = () => {
     .filter(loc => loc.status === 'Under Construction')
     .reduce((sum, loc) => sum + (parseInt(loc.capacity) || 0), 0)
 
-  const pipelineCapacity = locations
-    .filter(loc => loc.status === 'Pipeline')
-    .reduce((sum, loc) => sum + (parseInt(loc.capacity) || 0), 0)
-
-  const totalCapacity = operationalCapacity + underConstructionCapacity + pipelineCapacity
+  const totalCapacity = operationalCapacity + underConstructionCapacity
 
   return (
     <section id="national-footprint" className="section-padding bg-primary relative overflow-auto z-20">
@@ -499,10 +495,6 @@ const NationalFootprint = () => {
                       <div className="w-3 h-3 bg-solar-warning rounded-full"></div>
                       <span className="text-tertiary">Under Construction</span>
                     </div>
-                    <div className="flex items-center gap-2">
-                      <div className="w-3 h-3 bg-solar-accent rounded-full"></div>
-                      <span className="text-tertiary">Pipeline</span>
-                    </div>
                   </div>
                 </motion.div>
 
@@ -711,29 +703,22 @@ const NationalFootprint = () => {
 
             {/* Statistics */}
             <motion.div
-              className="grid grid-cols-3 gap-2"
+              className="grid grid-cols-2 gap-2"
             >
               {[
-                { 
-                  status: "Operational", 
-                  capacity: operationalCapacity, 
+                {
+                  status: "Operational",
+                  capacity: operationalCapacity,
                   color: "solar-success",
                   icon: Zap,
                   label: "Currently Active"
                 },
-                { 
-                  status: "Construction", 
-                  capacity: underConstructionCapacity, 
+                {
+                  status: "Construction",
+                  capacity: underConstructionCapacity,
                   color: "solar-warning",
                   icon: Building2,
                   label: "In Progress"
-                },
-                { 
-                  status: "Pipeline", 
-                  capacity: pipelineCapacity, 
-                  color: "solar-accent",
-                  icon: Target,
-                  label: "Planned"
                 }
               ].map((stat, index) => (
                 <motion.div
@@ -775,7 +760,6 @@ const NationalFootprint = () => {
               <div className="flex justify-center gap-4 text-sm">
                 <span className="text-solar-success font-medium">Operational: {operationalCapacity}MW</span>
                 <span className="text-solar-warning font-medium">Construction: {underConstructionCapacity}MW</span>
-                <span className="text-solar-accent font-medium">Pipeline: {pipelineCapacity}MW</span>
               </div>
 
               {/* Hover shine effect */}

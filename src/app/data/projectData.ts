@@ -93,7 +93,7 @@ export const projects: { [key: string]: ProjectData } = {
   'bibiana-project': {
     name: "BIBIYANA SOLAR POWER LTD",
     type: "50MW Power Plant",
-    status: "Pipeline",
+    status: "Under Construction",
     capacity: "50MW",
     location: "Nobiganj, Hobiganj, Sylhet Division",
     coordinates: { lat: 24.5045, lng: 91.6334 },
@@ -163,7 +163,7 @@ export const projects: { [key: string]: ProjectData } = {
   'moulvibazar-project2': {
     name: "SURMA SOLAR POWER LTD",
     type: "25MW Grid-Tied Solar Photovoltaic",
-    status: "Planning",
+    status: "Under Construction",
     capacity: "25MW",
     location: "Athangiri, Kagabala, Moulvibazar",
     coordinates: { lat: 24.4920, lng: 91.7780 },
@@ -209,7 +209,7 @@ export const projects: { [key: string]: ProjectData } = {
   'pabna-project2': {
     name: "PABNA GREEN POWER LTD",
     type: "70MW Grid-Tied Solar Photovoltaic",
-    status: "Planning",
+    status: "Under Construction",
     capacity: "70MW",
     location: "Bhabanipur, Hemayetpur, Pabna",
     coordinates: { lat: 24.0600, lng: 89.3500 },
@@ -253,7 +253,7 @@ export const projects: { [key: string]: ProjectData } = {
   'pabna-project3': {
     name: "PADMA SOLAR POWER LTD",
     type: "150MW Grid-Tied Solar Photovoltaic",
-    status: "Planning",
+    status: "Under Construction",
     capacity: "150MW",
     location: "Ratanpur, Hemayetpur, Pabna",
     coordinates: { lat: 24.0550, lng: 89.3600 },

@@ -183,7 +183,7 @@ const ProjectsPortfolio = () => {
     if (commissioningDate) return commissioningDate
     switch (status) {
       case 'Operational': return "Completed"
-      case 'Under Construction': return "Completion 2025"
+      case 'Under Construction': return "Under Construction"
       case 'Pipeline': return "Planning Phase"
       case 'Planning': return "Feasibility Study"
       default: return "In Development"
@@ -430,7 +430,7 @@ const ProjectsPortfolio = () => {
                 <TrendingUp className="h-5 w-5 text-solar-accent" />
               </div>
               <p className="text-xl font-bold text-solar-accent mb-1">295MW</p>
-              <p className="text-solar-accent/80 text-xs">Pipeline Projects</p>
+              <p className="text-solar-accent/80 text-xs">Under Construction</p>
             </div>
           </div>
 
