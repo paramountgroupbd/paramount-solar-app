@@ -132,7 +132,7 @@ const About = () => {
         },
         {
           title: "Expansion",
-          content: "Continuing to expand with pipeline projects including 25MW in Moulvibazar and 50MW in Bibiana.",
+          content: "Continuing to expand with under-construction projects including 25 MW in Moulovibazar, 50 MW in Bibiyana and 150 MW & 70 MW in Pabna.",
           icon: Globe
         }
       ]
