@@ -53,7 +53,7 @@ const NationalFootprint = () => {
       position: { top: "45%", left: "33%" }
     },
     {
-      name: "BSP",
+      name: "BSPL",
       type: "50MW Power Plant",
       status: "Under Construction",
       coordinates: { lat: 24.5045, lng: 91.6334 },
@@ -62,7 +62,7 @@ const NationalFootprint = () => {
       position: { top: "37%", left: "80%" }
     },
     {
-      name: "SSP",
+      name: "SSPL",
       type: "25MW Power Plant",
       status: "Under Construction",
       coordinates: { lat: 24.5005, lng: 91.6322 },
@@ -80,7 +80,7 @@ const NationalFootprint = () => {
       position: { top: "39%", left: "77%" }
     },
     {
-      name: "PGP",
+      name: "PGPL",
       type: "70MW Power Plant",
       status: "Under Construction",
       coordinates: { lat: 23.9602, lng: 89.1696 },
@@ -89,7 +89,7 @@ const NationalFootprint = () => {
       position: { top: "47%", left: "35%" }
     },
     {
-      name: "PSP",
+      name: "PSEL",
       type: "150MW Power Plant",
       status: "Under Construction",
       coordinates: { lat: 23.958, lng: 89.165 },

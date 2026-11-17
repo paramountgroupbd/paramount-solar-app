@@ -251,7 +251,7 @@ export const projects: { [key: string]: ProjectData } = {
     ]
   },
   'pabna-project3': {
-    name: "PADMA SOLAR POWER LTD",
+    name: "Padma Solar Energy Limited",
     type: "150MW Grid-Tied Solar Photovoltaic",
     status: "Under Construction",
     capacity: "150MW",
